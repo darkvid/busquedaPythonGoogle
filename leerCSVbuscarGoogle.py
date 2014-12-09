@@ -17,7 +17,7 @@ for row in reader:
     g.pages = 1
 
     #si obtengo 1 o más resultados, los escribo en otro fichero
-    if(g.get_result_count() > 0)
+    if g.get_result_count() > 0
         print '*Hay %s resultados*'%(g.get_result_count())
         writer.write(profesor)
         writer.write('\n')
